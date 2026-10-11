@@ -3,14 +3,22 @@
 [build]
   publish = "."
 
-# Cache-Control für optimale Performance
+# Erweiterte Security-Header gegen Angriffsversuche
 [[headers]]
   for = "/*"
   [headers.values]
+    # Klickjacking Schutz
     X-Frame-Options = "DENY"
+    # XSS Schutz
     X-XSS-Protection = "1; mode=block"
+    # MIME-Type Sniffing verhindern
     X-Content-Type-Options = "nosniff"
+    # Privatsphäre bei externen Links
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # Zugriff auf Browser-Hardware einschränken
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Robuste Content Security Policy (erlaubt Tailwind CDN und Font/Image Quellen)
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
 
 [[headers]]
   for = "/assets/*"

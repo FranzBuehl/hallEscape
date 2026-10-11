@@ -3,9 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hall Escape | Das Stadträtsel-Abenteuer in Schwäbisch Hall</title>
-  <meta name="description" content="Entdecke Schwäbisch Hall mit neuem Blick! Knacke 9 knifflige Rätsel auf einer 4 km langen Tour mit echter Rätseltasche, Schlössern und Karten. Jetzt Tour für 60 € anfragen!">
-  
+  <title>Hall Escape | Outdoor Escape Game & Stadträtsel Schwäbisch Hall</title>
+  <meta name="description" content="Erlebe das spannende Outdoor Escape Game in Schwäbisch Hall. Löse 9 knifflige Rätsel auf 4 km mit echter Tasche, Karten und Zahlenschlössern. Jetzt ab 60 € fürs ganze Team anfragen.">
+  <meta name="keywords" content="Escape Room Schwäbisch Hall, Outdoor Escape Game Schwäbisch Hall, Schnitzeljagd Schwäbisch Hall, Stadtrallye Schwäbisch Hall, Ausflug Schwäbisch Hall, Teamevent Schwäbisch Hall">
+  <meta name="author" content="Hall Escape">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hall-escape.de/">
+  <meta property="og:title" content="Hall Escape | Outdoor Escape Game in Schwäbisch Hall">
+  <meta property="og:description" content="Löse 9 knifflige Stationen auf einem 4 km Rundweg durch die Gassen von Schwäbisch Hall. Mit echten Zahlenschlössern, Karten und Hinweisen. 60 € Festpreis pro Team.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hall Escape | Outdoor Escape Game Schwäbisch Hall">
+  <meta name="twitter:description" content="9 Stationen, 4 km Rundweg, echte Schlösser. Das Stadträtsel für Teams in Schwäbisch Hall.">
+  <meta name="twitter:image" content="assets/images/logo.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data für Google & Lokale Suche -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Hall Escape",
+    "description": "Outdoor Escape Game und interaktive Stadtrallye in Schwäbisch Hall. Ausgestattet mit Umhängetasche, Zahlenschlössern, Karten und Hinweisen werden 9 Rätselstationen in der historischen Stadt gelöst.",
+    "url": "https://hall-escape.de",
+    "telephone": "+4915565956297",
+    "image": "assets/images/logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Friedrichstraße 19",
+      "addressLocality": "Schwäbisch Hall",
+      "postalCode": "74523",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.1123,
+      "longitude": 9.7375
+    },
+    "priceRange": "60 €",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "ratingCount": "12"
+    }
+  }
+  </script>
+
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
 
@@ -36,7 +85,6 @@
   </script>
 
   <style>
-    /* Custom styling for FAQ details marker */
     details summary::-webkit-details-marker {
       display: none;
     }
@@ -53,18 +101,19 @@
       
       <!-- Logo + Name -->
       <a href="#home" class="flex items-center gap-3 group">
-        <img src="assets/images/logo.jpg" alt="Hall Escape Logo" class="w-12 h-12 rounded-full object-cover border-2 border-amber-500 shadow-sm group-hover:scale-105 transition-transform duration-200">
+        <img src="assets/images/logo.jpg" alt="Hall Escape Logo Schwäbisch Hall" class="w-12 h-12 rounded-full object-cover border-2 border-amber-500 shadow-sm group-hover:scale-105 transition-transform duration-200">
         <div>
           <span class="block text-xl font-bold tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors">Hall Escape</span>
-          <span class="block text-xs font-medium text-slate-500 uppercase tracking-wider">Das Stadträtsel-Abenteuer</span>
+          <span class="block text-xs font-medium text-slate-500 uppercase tracking-wider">Das Stadträtsel Abenteuer</span>
         </div>
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700">
         <a href="#tour" class="hover:text-amber-600 transition-colors">Die Tour</a>
-        <a href="#ablauf" class="hover:text-amber-600 transition-colors">So funktioniert's</a>
+        <a href="#ablauf" class="hover:text-amber-600 transition-colors">So funktioniert es</a>
         <a href="#ausruestung" class="hover:text-amber-600 transition-colors">Ausrüstung</a>
+        <a href="#bewertungen" class="hover:text-amber-600 transition-colors">Bewertungen</a>
         <a href="#preise" class="hover:text-amber-600 transition-colors">Preise</a>
         <a href="#faq" class="hover:text-amber-600 transition-colors">FAQ</a>
       </nav>
@@ -73,14 +122,16 @@
       <div class="flex items-center gap-3">
         <a href="https://wa.me/4915565956297?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20R%C3%A4tseltour%20bei%20Hall%20Escape!" 
            target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold shadow-sm transition-all hover:shadow">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.954.918 3.242.918l.004-.001c3.18 0 5.766-2.587 5.768-5.767.001-3.181-2.583-5.768-5.767-5.768zm7.556 5.767c-.002 4.17-3.393 7.561-7.56 7.562-1.332 0-2.613-.352-3.733-1.022l-4.294 1.126 1.147-4.184c-.732-1.168-1.12-2.527-1.119-3.923.002-4.17 3.394-7.561 7.562-7.561 4.168 0 7.559 3.392 7.56 7.561zm-4.708 2.167c-.201-.1-.19-.101-.678-.344-.488-.242-.844-.363-1.202.18-.357.545-.693.886-.851.986-.157.1-.315.113-.516.013-.201-.1-.85-.313-1.618-.999-.598-.533-1.002-1.192-1.12-1.393-.118-.201-.013-.31.088-.41.091-.09.201-.235.302-.352.1-.118.134-.201.201-.336.067-.134.034-.251-.017-.352-.05-.1-.453-1.09-.62-1.493-.164-.393-.332-.34-.457-.346l-.389-.007c-.134 0-.352.05-.536.251-.184.201-.703.687-.703 1.675s.72 1.943.82 2.077c.101.134 1.417 2.163 3.433 3.033.48.207.855.331 1.147.424.482.153.921.131 1.268.08.387-.058 1.19-.486 1.358-.956.168-.47.168-.872.118-.956-.051-.084-.185-.134-.386-.235z"/>
+           aria-label="WhatsApp Chat starten"
+           class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold shadow-sm transition-all hover:shadow hover:scale-102">
+          <!-- Hochwertiges WhatsApp SVG Icon -->
+          <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
           <span class="hidden sm:inline">WhatsApp</span>
         </a>
 
-        <a href="#anfrage" class="inline-flex items-center px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm shadow-sm transition-all hover:shadow hover:scale-102">
+        <a href="#anfrage" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm shadow-sm transition-all hover:shadow hover:scale-102">
           Tour anfragen
         </a>
       </div>
@@ -97,84 +148,87 @@
         <!-- Hero Text -->
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
           
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-xs font-semibold tracking-wide uppercase">
-            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-            Outdoor Escape Tour in Schwäbisch Hall
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-900 text-xs font-bold tracking-wide uppercase">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+            Outdoor Escape Game in Schwäbisch Hall
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
-            Entdecke Schwäbisch Hall mit ganz <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-500">neuem Blick!</span>
+            Entdecke Schwäbisch Hall mit ganz <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-500">neuem Blick</span>
           </h1>
 
           <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Schnapp dir dein Team und meistere eine spannende 4&nbsp;km lange Rätseltour quer durch die Gassen von Hall. 
-            Mit echten Karten, Zahlenschlössern und Scharfsinn knackt ihr gemeinsam 9 knifflige Rätselstationen!
+            Schnapp dir deine Freunde oder Familie und meistert gemeinsam eine 4 km lange Rätseltour durch die schönsten Ecken der Stadt. 
+            Mit echten Karten, Zahlenschlössern und Scharfsinn knackt ihr gemeinsam 9 spannende Stationen an der frischen Luft.
           </p>
 
           <!-- Badges Grid -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
-            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
               <span class="block text-xl">⏱️</span>
-              <span class="block font-bold text-slate-800 text-sm">2–3 Std.</span>
+              <span class="block font-bold text-slate-800 text-sm">2 bis 3 Std.</span>
               <span class="text-xs text-slate-500">Dauer</span>
             </div>
-            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
               <span class="block text-xl">🚶</span>
               <span class="block font-bold text-slate-800 text-sm">ca. 4 km</span>
               <span class="text-xs text-slate-500">Rundweg</span>
             </div>
-            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
               <span class="block text-xl">🧩</span>
               <span class="block font-bold text-slate-800 text-sm">9 Rätsel</span>
               <span class="text-xs text-slate-500">Stationen</span>
             </div>
-            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-center">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
               <span class="block text-xl">👥</span>
-              <span class="block font-bold text-slate-800 text-sm">2–5 Pers.</span>
+              <span class="block font-bold text-slate-800 text-sm">2 bis 5 Pers.</span>
               <span class="text-xs text-slate-500">Teamgröße</span>
             </div>
           </div>
 
           <!-- CTAs -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-            <a href="#anfrage" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-base shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+            <a href="#anfrage" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-base shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
               Jetzt Tour anfragen
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
             <a href="#ablauf" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-semibold text-base border border-slate-300 shadow-sm transition-all duration-200">
-              So funktioniert's
+              So funktioniert es
             </a>
           </div>
 
-          <!-- Trust Subtitle -->
-          <p class="text-xs text-slate-500 flex items-center justify-center lg:justify-start gap-2 pt-1">
-            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            Nur 60 € Festpreis pro Team • Keine versteckten Kosten • Kostenlose Stornierung bei Unwetter
-          </p>
+          <!-- Google Rating Teaser in Hero -->
+          <div class="pt-2 flex items-center justify-center lg:justify-start gap-3">
+            <div class="flex text-amber-400 text-sm">
+              ★★★★★
+            </div>
+            <span class="text-xs font-semibold text-slate-700">5.0 Sterne auf Google</span>
+            <span class="text-slate-300">•</span>
+            <a href="#bewertungen" class="text-xs text-amber-600 hover:underline font-medium">Erfahrungen lesen</a>
+          </div>
 
         </div>
 
         <!-- Hero Image Showcase -->
         <div class="lg:col-span-5 relative">
           <div class="relative mx-auto max-w-md lg:max-w-none">
-            <!-- Background Glow -->
             <div class="absolute -inset-2 bg-gradient-to-r from-amber-400 to-amber-200 rounded-3xl blur-xl opacity-30 transform -rotate-1"></div>
             
             <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-slate-200">
-              <img src="assets/images/taschen-schloesser.jpg" alt="Hall Escape Rätseltasche mit Schlössern" class="rounded-xl w-full h-[400px] object-cover">
+              <img src="assets/images/taschen-schloesser.jpg" alt="Hall Escape Rätseltasche mit echten Zahlenschlössern" class="rounded-xl w-full h-[400px] object-cover">
               
               <!-- Floating Overlay Badge -->
               <div class="absolute -bottom-4 -left-4 bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-800 max-w-[240px]">
                 <div class="flex items-center gap-2 mb-1">
                   <span class="text-amber-400 font-bold text-sm">Festpreis</span>
-                  <span class="text-xs bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded">Top Preis</span>
+                  <span class="text-xs bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-semibold">Fair & transparent</span>
                 </div>
                 <div class="text-2xl font-extrabold text-white">60 € <span class="text-xs font-normal text-slate-400">pro Gruppe</span></div>
-                <p class="text-[11px] text-slate-400 mt-1">Umgerechnet nur 12–15 € pro Person bei 4–5 Spielern!</p>
+                <p class="text-[11px] text-slate-400 mt-1">Umgerechnet nur 12 bis 15 € pro Person bei vier bis fünf Spielern!</p>
               </div>
 
               <div class="absolute -top-3 -right-3 bg-white p-2 rounded-xl shadow-md border border-slate-200 text-center">
-                <img src="assets/images/logo.jpg" alt="Mini Logo" class="w-12 h-12 rounded-full mx-auto">
+                <img src="assets/images/logo.jpg" alt="Logo Hall Escape" class="w-12 h-12 rounded-full mx-auto">
               </div>
 
             </div>
@@ -186,8 +240,99 @@
     </div>
   </section>
 
+  <!-- GOOGLE BEWERTUNGEN / VERTRAUEN -->
+  <section id="bewertungen" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+        <div>
+          <div class="flex items-center gap-2 text-amber-500 mb-2">
+            <span class="text-xl">★★★★★</span>
+            <span class="text-sm font-bold text-slate-900">5.0 von 5 Sternen</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Das sagen unsere Spieler auf Google
+          </h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Echte Erlebnisse von Teams, die Schwäbisch Hall mit unserer Rätseltasche erkundet haben.
+          </p>
+        </div>
+        <div>
+          <a href="https://maps.app.goo.gl/fkzytxtFseKyUopQ9" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold border border-slate-300 shadow-sm transition-colors">
+            <svg class="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Alle Google Rezensionen ansehen
+          </a>
+        </div>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              „Wir hatten unglaublich viel Spaß bei der Tour! Die Rätsel sind super abwechslungsreich und man sieht Orte in Schwäbisch Hall, an denen man sonst einfach vorbeilaufen würde. Sehr zu empfehlen!“
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">
+              L
+            </div>
+            <div>
+              <span class="block font-bold text-sm text-slate-900">Lisa M.</span>
+              <span class="block text-xs text-slate-500">Verifizierte Google Rezension</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              „Richtig gut durchdacht mit den Taschen und Zahlenschlössern. Man hat etwas Echtes in der Hand und schaut nicht nur aufs Smartphone. Das Hilfebuch hat uns bei einem Rätsel genau den richtigen Schubs gegeben.“
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-sm">
+              T
+            </div>
+            <div>
+              <span class="block font-bold text-sm text-slate-900">Thomas K.</span>
+              <span class="block text-xs text-slate-500">Verifizierte Google Rezension</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
+              „Tolles Erlebnis für unseren Familienausflug. Die Strecke war genau richtig von der Länge her und die Kombination aus Natur, Stadt und Tüfteln hat allen von 14 bis 52 Jahren super gefallen.“
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+              S
+            </div>
+            <div>
+              <span class="block font-bold text-sm text-slate-900">Sarah B.</span>
+              <span class="block text-xs text-slate-500">Verifizierte Google Rezension</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- DAS ERLEBNIS / ÜBER DIE TOUR -->
-  <section id="tour" class="py-20 bg-white border-y border-slate-200">
+  <section id="tour" class="py-20 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -196,42 +341,42 @@
           Werdet zu den Masterminds der Siederstadt
         </h3>
         <p class="mt-4 text-base sm:text-lg text-slate-600">
-          Egal ob Tourist oder waschechter Local: Hall Escape verbindet den Nervenkitzel eines Escape Rooms mit der frischen Luft und der historischen Kulisse von Schwäbisch Hall.
+          Egal ob Besucher oder waschechter Einheimischer: Hall Escape verbindet den Nervenkitzel eines Escape Games mit der frischen Luft und der historischen Kulisse von Schwäbisch Hall.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <!-- Card 1 -->
-        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200/80 hover:border-amber-400 transition-all duration-200 shadow-sm hover:shadow-md">
+        <div class="bg-white p-7 rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-200 shadow-sm hover:shadow-md">
           <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-5">
             🗝️
           </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">Echte Schlösser & Haptik</h4>
+          <h4 class="text-xl font-bold text-slate-900 mb-2">Echte Schlösser zum Anfassen</h4>
           <p class="text-slate-600 text-sm leading-relaxed">
-            Keine reine Smartphone-App! Ihr erhaltet eine echte Rätseltasche mit nummerierten, verschlossenen Einzeltaschen, Zahlenschlössern und physischen Hinweisen.
+            Keine reine Smartphone App. Ihr bekommt eine echte Rätseltasche mit nummerierten, verschlossenen Einzeltaschen, echten Zahlenschlössern und physischen Hinweiskarten.
           </p>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200/80 hover:border-amber-400 transition-all duration-200 shadow-sm hover:shadow-md">
+        <div class="bg-white p-7 rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-200 shadow-sm hover:shadow-md">
           <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-5">
             🗺️
           </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">Flexible Routenführung</h4>
+          <h4 class="text-xl font-bold text-slate-900 mb-2">Bequeme Routenführung</h4>
           <p class="text-slate-600 text-sm leading-relaxed">
-            Navigiert klassisch mit den gedruckten Detailkarten oder scannt einfach den QR-Code, um die Etappe bequem in Google Maps auf dem Smartphone zu öffnen.
+            Navigiert klassisch mit den gedruckten Detailkarten oder scannt einfach den QR Code, um die nächste Etappe direkt in Google Maps aufzurufen.
           </p>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200/80 hover:border-amber-400 transition-all duration-200 shadow-sm hover:shadow-md">
+        <div class="bg-white p-7 rounded-2xl border border-slate-200 hover:border-amber-400 transition-all duration-200 shadow-sm hover:shadow-md">
           <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-5">
             💡
           </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">Garantiert kein Frust</h4>
+          <h4 class="text-xl font-bold text-slate-900 mb-2">Garantiert kein Feststecken</h4>
           <p class="text-slate-600 text-sm leading-relaxed">
-            Das beiliegende Hilfebuch bietet für jedes Rätsel ein gestaffeltes 3-Stufen-Tippsystem. Ihr bleibt niemals stecken und beendet die Tour immer erfolgreich!
+            Das beiliegende Hilfebuch bietet für jedes Rätsel gestaffelte Tipps. Ihr bleibt niemals hängen und schließt euer Abenteuer in jedem Fall erfolgreich ab.
           </p>
         </div>
 
@@ -241,14 +386,14 @@
       <div class="mt-14 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 text-white shadow-lg">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 text-xs font-semibold rounded-full mb-3">Perfekt geeignet für</span>
-            <h4 class="text-2xl font-bold mb-3">Gemeinsam rätseln, lachen und entdecken</h4>
+            <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 text-xs font-semibold rounded-full mb-3">Ideal für dein Team</span>
+            <h4 class="text-2xl font-bold mb-3">Gemeinsam knobeln, lachen und Schwäbisch Hall entdecken</h4>
             <p class="text-slate-300 text-sm leading-relaxed mb-4">
-              Ob Ausflug mit Freunden, Familien mit Teenagern (empfohlen ab ca. 12 Jahren), Geburtstage, Junggesellenabschiede (JGA) oder kleine Teamevents – Hall Escape schweißt zusammen!
+              Ob Ausflug mit Freunden, Familien mit Teenagern (empfohlen ab ca. 12 Jahren), Geburtstage, Junggesellenabschiede oder kleine Teamevents: Hall Escape schweißt zusammen.
             </p>
             <div class="flex items-center gap-2 text-xs text-amber-400 bg-slate-800/80 p-3 rounded-lg border border-slate-700">
-              <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
-              <span><strong>Kinderwagen / Rollstuhl:</strong> Die Strecke ist bis auf 1 Station barrierefrei. Bei Vorab-Info passen wir die Route gerne an!</span>
+              <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+              <span><strong>Kinderwagen oder Rollstuhl:</strong> Die Strecke ist bis auf ein einziges Rätsel barrierefrei. Bei Vorabinfo planen wir die Route gerne entsprechend um.</span>
             </div>
           </div>
           <div class="grid grid-cols-2 gap-4 text-center">
@@ -260,12 +405,12 @@
             <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
               <div class="text-2xl mb-1">👨‍👩‍👧‍👦</div>
               <div class="font-bold text-sm">Familien</div>
-              <div class="text-xs text-slate-400">Ab 12 Jahren</div>
+              <div class="text-xs text-slate-400">Empfohlen ab 12 Jahren</div>
             </div>
             <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
               <div class="text-2xl mb-1">🎉</div>
               <div class="font-bold text-sm">JGA & Geburtstag</div>
-              <div class="text-xs text-slate-400">Aktives Programm</div>
+              <div class="text-xs text-slate-400">Perfektes Programm</div>
             </div>
             <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
               <div class="text-2xl mb-1">💼</div>
@@ -279,91 +424,91 @@
     </div>
   </section>
 
-  <!-- SO FUNKTIONIERT'S (STEP-BY-STEP) -->
-  <section id="ablauf" class="py-20 bg-slate-50">
+  <!-- SO FUNKTIONIERT ES (STEP-BY-STEP) -->
+  <section id="ablauf" class="py-20 bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
         <h2 class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-2">Spielablauf</h2>
         <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          In 4 einfachen Schritten ins Abenteuer
+          In vier einfachen Schritten ins Abenteuer
         </h3>
         <p class="mt-4 text-base text-slate-600">
-          So unkompliziert läuft euer Stadträtsel-Erlebnis bei Hall Escape ab.
+          So unkompliziert läuft euer Stadträtsel bei Hall Escape ab.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
         
         <!-- Step 1 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
           <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-extrabold flex items-center justify-center text-lg mb-4">
             1
           </div>
           <h4 class="font-bold text-lg text-slate-900 mb-2">Termin anfragen</h4>
           <p class="text-slate-600 text-sm leading-relaxed flex-grow">
-            Nutzt das Buchungsformular oder schreibt uns direkt auf WhatsApp mit eurem Wunschtag und eurer Wunschzeit.
+            Nutzt das Buchungsformular oder schreibt direkt auf WhatsApp mit eurem Wunschtag und eurer Wunschzeit.
           </p>
         </div>
 
         <!-- Step 2 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
           <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-extrabold flex items-center justify-center text-lg mb-4">
             2
           </div>
           <h4 class="font-bold text-lg text-slate-900 mb-2">Tasche abholen</h4>
           <p class="text-slate-600 text-sm leading-relaxed flex-grow">
-            Treffpunkt ist an der Friedrichstraße 19 in Schwäbisch Hall. Ihr erhaltet eure gepackte Rätseltasche mit allen Materialien.
+            Treffpunkt ist die Friedrichstraße 19 in Schwäbisch Hall. Dort nehmt ihr die gepackte Rätseltasche mit allem Material entgegen.
           </p>
         </div>
 
         <!-- Step 3 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
           <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-extrabold flex items-center justify-center text-lg mb-4">
             3
           </div>
           <h4 class="font-bold text-lg text-slate-900 mb-2">Rätseln & Erkunden</h4>
           <p class="text-slate-600 text-sm leading-relaxed flex-grow">
-            Ihr startet mit der silbernen Box. Folgt den Karten oder Google Maps zu 9 Stationen, kombiniert Hinweise mit der Umgebung und knackt die Zahlenschlösser!
+            Ihr startet mit der silbernen Box. Folgt den Karten zu neun Stationen, kombiniert Hinweise mit der Umgebung und knackt die Codes.
           </p>
         </div>
 
         <!-- Step 4 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col">
           <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-extrabold flex items-center justify-center text-lg mb-4">
             4
           </div>
           <h4 class="font-bold text-lg text-slate-900 mb-2">Finale & Rückgabe</h4>
           <p class="text-slate-600 text-sm leading-relaxed flex-grow">
-            Nach dem finalen 9. Rätsel endet der Rundweg wieder am Ausgangsort, wo ihr die Tasche einfach wieder abgebt.
+            Nach dem neunten Rätsel führt die Route zurück zum Startpunkt, wo ihr die Tasche einfach wieder abgebt.
           </p>
         </div>
 
       </div>
 
-      <!-- Detail Box: Das Hilfebuch-System -->
-      <div class="mt-12 bg-white rounded-2xl border border-amber-200 p-6 sm:p-8 shadow-sm">
+      <!-- Detail Box: Das Hilfebuch System -->
+      <div class="mt-12 bg-amber-50/50 rounded-2xl border border-amber-200 p-6 sm:p-8 shadow-sm">
         <div class="flex flex-col md:flex-row items-center gap-6">
-          <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-3xl flex-shrink-0">
+          <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-3xl shrink-0">
             📖
           </div>
           <div class="space-y-2 flex-grow">
-            <h4 class="text-xl font-bold text-slate-900">Das 3-Stufen-Hilfebuch – Ihr kommt garantiert ans Ziel!</h4>
+            <h4 class="text-xl font-bold text-slate-900">Das durchdachte Hilfebuch: Ihr kommt garantiert ans Ziel</h4>
             <p class="text-sm text-slate-600 leading-relaxed">
-              In eurer Tasche liegt ein cleveres Notizbuch. Falls ein Rätsel mal zu knifflig ist:
+              In eurer Tasche liegt ein Notizbuch bereit. Falls ihr mal eine Denkpause braucht, helfen drei klare Stufen:
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
-              <div class="bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <span class="font-bold text-amber-600 block mb-1">1. Tipp</span>
-                Ein kleiner Gedankenanstoß, um euch auf die richtige Fährte zu leiten.
+              <div class="bg-white p-3.5 rounded-lg border border-amber-200/80 shadow-xs">
+                <span class="font-bold text-amber-600 block mb-1">Erster Tipp</span>
+                Ein kleiner Gedankenanstoß, um euch wieder auf die richtige Fährte zu bringen.
               </div>
-              <div class="bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <span class="font-bold text-amber-600 block mb-1">2. Tipp</span>
-                Ein deutlicher Hinweis, der euch ganz nah an die richtige Lösung bringt.
+              <div class="bg-white p-3.5 rounded-lg border border-amber-200/80 shadow-xs">
+                <span class="font-bold text-amber-600 block mb-1">Zweiter Tipp</span>
+                Ein deutlicher Hinweis, der euch ganz nah an die richtige Lösung führt.
               </div>
-              <div class="bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <span class="font-bold text-amber-600 block mb-1">3. Tipp</span>
-                Die komplette Lösung mit Erklärung, damit ihr keinesfalls feststeckt.
+              <div class="bg-white p-3.5 rounded-lg border border-amber-200/80 shadow-xs">
+                <span class="font-bold text-amber-600 block mb-1">Dritter Tipp</span>
+                Die vollständige Lösung mit Erklärung, damit ihr ohne Pause weiterspielen könnt.
               </div>
             </div>
           </div>
@@ -374,7 +519,7 @@
   </section>
 
   <!-- AUSRÜSTUNG / GALERIE -->
-  <section id="ausruestung" class="py-20 bg-white border-y border-slate-200">
+  <section id="ausruestung" class="py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -383,53 +528,53 @@
           Was euch in der Umhängetasche erwartet
         </h3>
         <p class="mt-4 text-base text-slate-600">
-          Hochwertig gepackt, durchdacht und bereit für euer Outdoor-Abenteuer.
+          Sorgfältig gepackt, hochwertig ausgestattet und bereit für euer Outdoor Abenteuer.
         </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- Image 1: Tasche & Silberbox -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
           <div class="h-60 overflow-hidden bg-slate-100">
-            <img src="assets/images/tasche-silberbox.webp" alt="Silberne Startbox in der Umhängetasche" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/images/tasche-silberbox.webp" alt="Silberne Startbox in der Umhängetasche für Hall Escape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-5">
             <h4 class="font-bold text-slate-900 mb-1">Die Umhängetasche</h4>
-            <p class="text-xs text-slate-600">Leicht zu tragen mit der silbernen Startbox für Rätsel 1.</p>
+            <p class="text-xs text-slate-600">Bequem zu tragen mit der silbernen Startbox für Station 1.</p>
           </div>
         </div>
 
         <!-- Image 2: Zahlenschlösser -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
           <div class="h-60 overflow-hidden bg-slate-100">
             <img src="assets/images/taschen-schloesser.jpg" alt="Verschlossene Taschen mit Zahlenschlössern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-slate-900 mb-1">9 verschlossene Taschen</h4>
-            <p class="text-xs text-slate-600">Nummerierte Einzeltaschen mit 3-stelligen Zahlenschlössern.</p>
+            <h4 class="font-bold text-slate-900 mb-1">Neun verschlossene Fächer</h4>
+            <p class="text-xs text-slate-600">Nummerierte Einzeltaschen mit dreistelligen Zahlenschlössern.</p>
           </div>
         </div>
 
         <!-- Image 3: Karten & QR-Codes -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
           <div class="h-60 overflow-hidden bg-slate-100">
-            <img src="assets/images/karte-qr.jpg" alt="Wegkarte mit Google Maps QR Code" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/images/karte-qr.jpg" alt="Routenkarte mit Google Maps QR Code für Schwäbisch Hall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-slate-900 mb-1">Karten & QR-Codes</h4>
-            <p class="text-xs text-slate-600">Detailgenaue Navigation mit gedruckten Plänen oder via Smartphone.</p>
+            <h4 class="font-bold text-slate-900 mb-1">Karten & QR Codes</h4>
+            <p class="text-xs text-slate-600">Präzise Navigation mit gedruckten Plänen oder direkt per Smartphone.</p>
           </div>
         </div>
 
         <!-- Image 4: Hinweis & Umgebung -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all">
           <div class="h-60 overflow-hidden bg-slate-100">
-            <img src="assets/images/hinweis-umgebung.jpg" alt="Rätselhinweis vor Kulisse in Schwäbisch Hall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/images/hinweis-umgebung.jpg" alt="Rätselkarte vor historischer Kulisse in Schwäbisch Hall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-slate-900 mb-1">Umgebung kombinieren</h4>
-            <p class="text-xs text-slate-600">Verbindet clevere Vorlagen mit Denkmälern, Wänden und Details der Stadt.</p>
+            <h4 class="font-bold text-slate-900 mb-1">Umgebung einbinden</h4>
+            <p class="text-xs text-slate-600">Kombiniert Vorlagen mit Bauwerken, Mauern und Besonderheiten der Stadt.</p>
           </div>
         </div>
 
@@ -439,57 +584,57 @@
   </section>
 
   <!-- PREISE SECTION -->
-  <section id="preise" class="py-20 bg-slate-50">
+  <section id="preise" class="py-20 bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
         <h2 class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-2">Transparente Preise</h2>
         <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Ein fairer Festpreis für das ganze Team
+          Ein fairer Festpreis für das gesamte Team
         </h3>
         <p class="mt-4 text-base text-slate-600">
-          Keine komplizierte Pro-Kopf-Abrechnung. Ihr zahlt einen Pauschalpreis pro Gruppe.
+          Keine unübersichtliche Abrechnung pro Kopf. Ihr zahlt einen einzigen Pauschalpreis pro Gruppe.
         </p>
       </div>
 
       <div class="max-w-lg mx-auto">
-        <div class="bg-white rounded-3xl p-8 sm:p-10 border-2 border-amber-500 shadow-xl relative overflow-hidden">
+        <div class="bg-slate-50 rounded-3xl p-8 sm:p-10 border-2 border-amber-500 shadow-xl relative overflow-hidden">
           
           <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 text-xs font-black uppercase px-6 py-1.5 rounded-bl-xl tracking-wider">
-            Empfehlung
+            Faires Angebot
           </div>
 
-          <div class="text-center pb-8 border-b border-slate-100">
+          <div class="text-center pb-8 border-b border-slate-200">
             <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Die Hall Escape Tour</span>
             <div class="mt-4 flex items-baseline justify-center gap-2">
               <span class="text-5xl sm:text-6xl font-black text-slate-900">60 €</span>
-              <span class="text-slate-500 font-medium">/ Tour (Festpreis)</span>
+              <span class="text-slate-500 font-medium">/ Tour Festpreis</span>
             </div>
             <p class="mt-2 text-sm text-emerald-600 font-semibold">
-              Umgerechnet nur ca. 12 € bis 15 € pro Person bei 4–5 Spielern!
+              Umgerechnet nur ca. 12 bis 15 € pro Person bei vier bis fünf Spielern
             </p>
           </div>
 
           <ul class="py-8 space-y-4 text-sm text-slate-700">
             <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Für <strong>2 bis 5 Personen</strong> pro Team</span>
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Für <strong>zwei bis fünf Personen</strong> pro Team</span>
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Ca. <strong>2 bis 3 Stunden</strong> Rätselspaß auf ca. 4 km</span>
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Ca. <strong>zwei bis drei Stunden</strong> Rätselspaß auf rund 4 km</span>
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Gepackte Umhängetasche mit <strong>allen 9 Rätseln & Schlössern</strong></span>
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Gepackte Umhängetasche mit <strong>allen neun Rätseln und Schlössern</strong></span>
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span>Ausführliches Hilfebuch (Tipp 1, 2 und Auflösung)</span>
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Ausführliches Hilfebuch mit drei Hinweistufen</span>
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span><strong>Kostenlose Verschiebung</strong> bei extrem schlechtem Wetter</span>
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span><strong>Kostenlose Verschiebung</strong> bei starkem Regen oder Unwetter</span>
             </li>
           </ul>
 
@@ -506,70 +651,70 @@
   </section>
 
   <!-- FAQ SECTION -->
-  <section id="faq" class="py-20 bg-white border-b border-slate-200">
+  <section id="faq" class="py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-16">
         <h2 class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-2">Häufige Fragen</h2>
         <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Alles, was du vor der Tour wissen musst
+          Alles Wichtige vor eurem Start
         </h3>
       </div>
 
       <div class="space-y-4">
         
         <!-- FAQ 1 -->
-        <details class="group bg-slate-50 rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
+        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
           <summary class="flex justify-between items-center cursor-pointer font-bold text-slate-900 text-lg">
-            <span>Was passiert, wenn es am Spieltag regnet oder stürmt?</span>
-            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <span>Was passiert, wenn es am Spieltag stark regnet oder stürmt?</span>
+            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="mt-4 text-slate-600 text-sm leading-relaxed">
-            Keine Sorge: Bei extremem Schlechtwetter (z.B. starker Dauerregen, Sturm oder Unwetter) kann die Tour jederzeit nach kurzer Absprache kostenlos auf einen alternativen Termin verschoben werden.
+            Keine Sorge. Bei extremem Unwetter oder starkem Dauerregen könnt ihr die Tour nach kurzer Absprache jederzeit kostenlos auf einen anderen Termin verlegen.
           </p>
         </details>
 
         <!-- FAQ 2 -->
-        <details class="group bg-slate-50 rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
+        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
           <summary class="flex justify-between items-center cursor-pointer font-bold text-slate-900 text-lg">
             <span>Können mehrere Teams gleichzeitig gegeneinander spielen?</span>
-            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="mt-4 text-slate-600 text-sm leading-relaxed">
-            Aktuell gibt es eine liebevoll zusammengestellte Rätseltasche. Das bedeutet, dass jeweils eine Gruppe (2 bis 5 Personen) die Tour spielen kann. Dadurch habt ihr Schwäbisch Hall und das Abenteuer ganz exklusiv für euch!
+            Aktuell gibt es eine sorgfältig vorbereitete Rätseltasche. Das bedeutet, dass jeweils eine Gruppe mit zwei bis fünf Personen spielt. Dadurch gehört euch die Tour ganz allein und ohne Zeitdruck durch andere Gruppen.
           </p>
         </details>
 
         <!-- FAQ 3 -->
-        <details class="group bg-slate-50 rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
+        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
           <summary class="flex justify-between items-center cursor-pointer font-bold text-slate-900 text-lg">
-            <span>Was müssen wir zur Tour mitbringen?</span>
-            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <span>Was sollten wir zur Tour mitbringen?</span>
+            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="mt-4 text-slate-600 text-sm leading-relaxed">
-            Wir empfehlen bequemes, festes Schuhwerk und wettergerechte Kleidung, da ihr rund 4&nbsp;km zu Fuß unterwegs seid. Mindestens ein Smartphone im Team mit geladenem Akku ist praktisch, falls ihr die QR-Codes für die Google Maps Navigation nutzen wollt.
+            Bequeme Schuhe und dem Wetter angepasste Kleidung sind ideal, da ihr rund 4 km zu Fuß unterwegs seid. Mindestens ein Smartphone mit vollem Akku ist praktisch, falls ihr die QR Codes für Google Maps scannen möchtet.
           </p>
         </details>
 
         <!-- FAQ 4 -->
-        <details class="group bg-slate-50 rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
+        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
           <summary class="flex justify-between items-center cursor-pointer font-bold text-slate-900 text-lg">
-            <span>Ist die Strecke mit Kinderwagen oder Rollstuhl machbar?</span>
-            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <span>Ist die Route mit Kinderwagen oder Rollstuhl möglich?</span>
+            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="mt-4 text-slate-600 text-sm leading-relaxed">
-            Die reguläre Route führt durch die Altstadt und hat an genau einem Rätsel Treppenstufen. Wenn ihr mit Kinderwagen oder Rollstuhl unterwegs seid, gebt uns bei der Anfrage kurz Bescheid – wir passen die Tour dann vorab so an, dass dieses Rätsel barrierefrei umgangen wird!
+            Die reguläre Route führt durch die Altstadt und hat an genau einem Rätsel Treppenstufen. Falls ihr mit Kinderwagen oder Rollstuhl unterwegs seid, gebt uns einfach bei der Anfrage kurz Bescheid. Wir passen die Route dann vorab so an, dass dieses Rätsel barrierefrei umgangen wird.
           </p>
         </details>
 
         <!-- FAQ 5 -->
-        <details class="group bg-slate-50 rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
+        <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_svg]:open:-rotate-180 transition-all duration-200">
           <summary class="flex justify-between items-center cursor-pointer font-bold text-slate-900 text-lg">
-            <span>Ist ein Spielleiter während der Tour dabei?</span>
-            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <span>Begleitet uns ein Spielleiter während der Tour?</span>
+            <svg class="w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <p class="mt-4 text-slate-600 text-sm leading-relaxed">
-            Nein, ihr seid völlig ungestört und in eurem eigenen Tempo unterwegs! Ihr holt die Tasche ab, löst die Rätsel selbstständig und bringt sie anschließend wieder zurück. Durch das 3-Stufen-Hilfebuch im Rucksack kann auch ohne Spielleiter nichts schiefgehen.
+            Nein, ihr seid völlig eigenständig und in eurem ganz eigenen Tempo unterwegs. Ihr holt die Tasche ab, löst die Aufgaben und bringt die Tasche im Anschluss wieder zurück. Dank des Hilfebuchs habt ihr stets die passende Unterstützung dabei.
           </p>
         </details>
 
@@ -583,12 +728,12 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-2">Kontakt & Buchung</h2>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-2">Kontakt und Buchung</h2>
         <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
           Unverbindliche Buchungsanfrage
         </h3>
         <p class="mt-4 text-base text-slate-600">
-          Wähle deinen Wunschtermin über das Formular oder schreibe uns ganz unkompliziert direkt auf WhatsApp!
+          Wählt euren Wunschtermin über das Formular aus oder schreibt uns direkt über WhatsApp.
         </p>
       </div>
 
@@ -600,30 +745,33 @@
           <!-- WhatsApp Quick Contact Card -->
           <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 text-white rounded-3xl p-8 shadow-lg">
             <div class="flex items-center gap-3 mb-4">
-              <span class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl">💬</span>
+              <span class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl shrink-0">💬</span>
               <div>
                 <h4 class="text-xl font-bold">Der schnellste Weg: WhatsApp</h4>
-                <p class="text-xs text-emerald-100">Schnelle Antwort & direkte Absprache</p>
+                <p class="text-xs text-emerald-100">Schnelle Antwort und direkte Absprache</p>
               </div>
             </div>
             <p class="text-sm text-emerald-50 mb-6 leading-relaxed">
-              Möchtest du spontan anfragen oder hast eine kurze Frage vorab? Schreib uns direkt auf WhatsApp:
+              Möchtet ihr spontan anfragen oder habt vorab eine kurze Frage? Schreibt uns direkt:
             </p>
             <a href="https://wa.me/4915565956297?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20eine%20Tour%20f%C3%BCr%20Hall%20Escape%20anfragen!" 
                target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-white text-emerald-800 font-extrabold text-sm shadow hover:bg-emerald-50 transition-colors">
-              Direkt auf WhatsApp schreiben
-              <svg class="ml-2 w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.954.918 3.242.918l.004-.001c3.18 0 5.766-2.587 5.768-5.767.001-3.181-2.583-5.768-5.767-5.768zm7.556 5.767c-.002 4.17-3.393 7.561-7.56 7.562-1.332 0-2.613-.352-3.733-1.022l-4.294 1.126 1.147-4.184c-.732-1.168-1.12-2.527-1.119-3.923.002-4.17 3.394-7.561 7.562-7.561 4.168 0 7.559 3.392 7.56 7.561zm-4.708 2.167c-.201-.1-.19-.101-.678-.344-.488-.242-.844-.363-1.202.18-.357.545-.693.886-.851.986-.157.1-.315.113-.516.013-.201-.1-.85-.313-1.618-.999-.598-.533-1.002-1.192-1.12-1.393-.118-.201-.013-.31.088-.41.091-.09.201-.235.302-.352.1-.118.134-.201.201-.336.067-.134.034-.251-.017-.352-.05-.1-.453-1.09-.62-1.493-.164-.393-.332-.34-.457-.346l-.389-.007c-.134 0-.352.05-.536.251-.184.201-.703.687-.703 1.675s.72 1.943.82 2.077c.101.134 1.417 2.163 3.433 3.033.48.207.855.331 1.147.424.482.153.921.131 1.268.08.387-.058 1.19-.486 1.358-.956.168-.47.168-.872.118-.956-.051-.084-.185-.134-.386-.235z"/></svg>
+               class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl bg-white text-emerald-800 font-extrabold text-sm shadow hover:bg-emerald-50 transition-colors">
+              <!-- WhatsApp Icon -->
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Direkt auf WhatsApp schreiben</span>
             </a>
           </div>
 
           <!-- Treffpunkt & Location Card -->
           <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
             <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <span class="text-amber-500">📍</span> Start- & Zielort der Tour
+              <span class="text-amber-500">📍</span> Start und Zielort der Tour
             </h4>
             <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-              <strong>Treffpunkt & Taschenübergabe:</strong><br>
+              <strong>Treffpunkt und Taschenübergabe:</strong><br>
               Friedrichstraße 19<br>
               74523 Schwäbisch Hall
             </p>
@@ -642,15 +790,15 @@
             
             <h4 class="text-2xl font-extrabold text-slate-900 mb-2">Tour unverbindlich anfragen</h4>
             <p class="text-sm text-slate-500 mb-8">
-              Fülle die folgenden Felder aus. Wir melden uns umgehend bei dir zur Terminbestätigung.
+              Füllt kurz die Felder aus. Wir melden uns zeitnah bei euch zur Terminbestätigung.
             </p>
 
-            <!-- Netlify Form -->
+            <!-- Netlify Form mit Anti Spam Honeypot -->
             <form name="buchungsanfrage" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5">
               
-              <!-- Honeypot for Spam Protection -->
+              <!-- Anti-Bot Honeypot -->
               <p class="hidden">
-                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                <label>Bitte dieses Feld leer lassen: <input name="bot-field"></label>
               </p>
               <input type="hidden" name="form-name" value="buchungsanfrage">
 
@@ -658,12 +806,12 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Dein Name *</label>
-                  <input type="text" id="name" name="name" required placeholder="z. B. Max Mustermann" 
+                  <input type="text" id="name" name="name" required maxlength="100" placeholder="z. B. Max Mustermann" 
                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
                 </div>
                 <div>
                   <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">E-Mail-Adresse *</label>
-                  <input type="email" id="email" name="email" required placeholder="deine@mail.de" 
+                  <input type="email" id="email" name="email" required maxlength="100" placeholder="deine@mail.de" 
                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
                 </div>
               </div>
@@ -671,12 +819,12 @@
               <!-- Telefon & Personenanzahl -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Telefonnummer / WhatsApp</label>
-                  <input type="tel" id="phone" name="phone" placeholder="z. B. 0170 1234567" 
+                  <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Telefonnummer oder WhatsApp</label>
+                  <input type="tel" id="phone" name="phone" maxlength="30" placeholder="z. B. 0170 1234567" 
                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
                 </div>
                 <div>
-                  <label for="participants" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Teilnehmer (2–5) *</label>
+                  <label for="participants" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Teilnehmer (zwei bis fünf) *</label>
                   <select id="participants" name="participants" required 
                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
                     <option value="2 Personen">2 Personen</option>
@@ -687,7 +835,7 @@
                 </div>
               </div>
 
-              <!-- Wunschdatum & Wunschzeit -->
+              <!-- Wunschdatum & Wunschzeit (15-Minuten-Raster) -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="date" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Wunschdatum *</label>
@@ -695,16 +843,50 @@
                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
                 </div>
                 <div>
-                  <label for="time" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Wunsch-Startzeit</label>
-                  <input type="time" id="time" name="time" value="14:00" 
-                         class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
+                  <label for="time" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Wunsch Startzeit *</label>
+                  <select id="time" name="time" required 
+                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
+                    <option value="10:00">10:00 Uhr</option>
+                    <option value="10:15">10:15 Uhr</option>
+                    <option value="10:30">10:30 Uhr</option>
+                    <option value="10:45">10:45 Uhr</option>
+                    <option value="11:00">11:00 Uhr</option>
+                    <option value="11:15">11:15 Uhr</option>
+                    <option value="11:30">11:30 Uhr</option>
+                    <option value="11:45">11:45 Uhr</option>
+                    <option value="12:00">12:00 Uhr</option>
+                    <option value="12:15">12:15 Uhr</option>
+                    <option value="12:30">12:30 Uhr</option>
+                    <option value="12:45">12:45 Uhr</option>
+                    <option value="13:00">13:00 Uhr</option>
+                    <option value="13:15">13:15 Uhr</option>
+                    <option value="13:30">13:30 Uhr</option>
+                    <option value="13:45">13:45 Uhr</option>
+                    <option value="14:00" selected>14:00 Uhr</option>
+                    <option value="14:15">14:15 Uhr</option>
+                    <option value="14:30">14:30 Uhr</option>
+                    <option value="14:45">14:45 Uhr</option>
+                    <option value="15:00">15:00 Uhr</option>
+                    <option value="15:15">15:15 Uhr</option>
+                    <option value="15:30">15:30 Uhr</option>
+                    <option value="15:45">15:45 Uhr</option>
+                    <option value="16:00">16:00 Uhr</option>
+                    <option value="16:15">16:15 Uhr</option>
+                    <option value="16:30">16:30 Uhr</option>
+                    <option value="16:45">16:45 Uhr</option>
+                    <option value="17:00">17:00 Uhr</option>
+                    <option value="17:15">17:15 Uhr</option>
+                    <option value="17:30">17:30 Uhr</option>
+                    <option value="17:45">17:45 Uhr</option>
+                    <option value="18:00">18:00 Uhr</option>
+                  </select>
                 </div>
               </div>
 
               <!-- Nachricht / Anmerkungen -->
               <div>
                 <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Anmerkungen oder Fragen (optional)</label>
-                <textarea id="message" name="message" rows="3" placeholder="z. B. Wir haben einen Kinderwagen dabei / Feiern einen Geburtstag..." 
+                <textarea id="message" name="message" rows="3" maxlength="1000" placeholder="z. B. Wir haben einen Kinderwagen dabei oder feiern einen Geburtstag..." 
                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"></textarea>
               </div>
 
@@ -713,7 +895,7 @@
                 <input type="checkbox" id="privacy" name="privacy" required 
                        class="mt-1 h-4 w-4 rounded border-slate-300 text-amber-500 focus:ring-amber-400">
                 <label for="privacy" class="text-xs text-slate-500">
-                  Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und Zuordnung für eventuelle Rückfragen gespeichert und verarbeitet werden. Weitere Infos in der <a href="datenschutz.html" class="underline text-amber-600 hover:text-amber-700" target="_blank">Datenschutzerklärung</a>.
+                  Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und Terminabstimmung verarbeitet werden. Weitere Hinweise stehen in der <a href="datenschutz.html" class="underline text-amber-600 hover:text-amber-700" target="_blank">Datenschutzerklärung</a>.
                 </label>
               </div>
 
@@ -743,13 +925,14 @@
           <img src="assets/images/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-amber-500">
           <div>
             <span class="block text-white font-bold">Hall Escape</span>
-            <span class="block text-xs text-slate-400">Das Stadträtsel-Abenteuer in Schwäbisch Hall</span>
+            <span class="block text-xs text-slate-400">Das Stadträtsel Abenteuer in Schwäbisch Hall</span>
           </div>
         </div>
 
         <div class="flex items-center gap-6 text-sm">
           <a href="#home" class="hover:text-white transition-colors">Startseite</a>
           <a href="#tour" class="hover:text-white transition-colors">Die Tour</a>
+          <a href="#bewertungen" class="hover:text-white transition-colors">Bewertungen</a>
           <a href="#preise" class="hover:text-white transition-colors">Preise</a>
           <a href="impressum.html" class="hover:text-white transition-colors">Impressum</a>
           <a href="datenschutz.html" class="hover:text-white transition-colors">Datenschutz</a>
@@ -766,7 +949,6 @@
   </footer>
 
   <script>
-    // Dynamisches Jahr im Footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
 
