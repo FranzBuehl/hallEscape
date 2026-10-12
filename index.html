@@ -130,7 +130,7 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700">
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700" aria-label="Hauptnavigation">
         <a href="#tour" class="hover:text-amber-600 transition-colors">Die Tour</a>
         <a href="#ablauf" class="hover:text-amber-600 transition-colors">So funktioniert es</a>
         <a href="#ausruestung" class="hover:text-amber-600 transition-colors">Ausrüstung</a>
@@ -139,13 +139,13 @@
         <a href="#faq" class="hover:text-amber-600 transition-colors">FAQ</a>
       </nav>
 
-      <!-- Action Buttons -->
-      <div class="flex items-center gap-3">
+      <!-- Action Buttons & Mobile Hamburger -->
+      <div class="flex items-center gap-2 sm:gap-3">
         <a href="https://wa.me/4915565956297?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20R%C3%A4tseltour%20bei%20Hall%20Escape!" 
            target="_blank" rel="noopener noreferrer"
            aria-label="WhatsApp Chat starten"
            class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold shadow-sm transition-all hover:shadow hover:scale-102">
-          <!-- Hochwertiges WhatsApp SVG Icon -->
+          <!-- WhatsApp Icon -->
           <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
           </svg>
@@ -155,8 +155,36 @@
         <a href="#anfrage" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm shadow-sm transition-all hover:shadow hover:scale-102">
           Tour anfragen
         </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav"
+                class="inline-flex md:hidden items-center justify-center p-2 rounded-xl text-slate-700 hover:text-amber-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors">
+          <svg id="menuIconClosed" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menuIconOpen" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
       </div>
 
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNav" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl space-y-1">
+      <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+        <a href="#tour" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-amber-50 hover:text-amber-700 transition-colors">Die Tour</a>
+        <a href="#ablauf" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-amber-50 hover:text-amber-700 transition-colors">So funktioniert es</a>
+        <a href="#ausruestung" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-amber-50 hover:text-amber-700 transition-colors">Ausrüstung</a>
+        <a href="#bewertungen" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-amber-50 hover:text-amber-700 transition-colors">Bewertungen</a>
+        <a href="#preise" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-amber-50 hover:text-amber-700 transition-colors">Preise</a>
+        <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-amber-50 hover:text-amber-700 transition-colors">FAQ</a>
+      </nav>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+        <a href="#anfrage" class="mobile-nav-link w-full text-center py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm shadow transition-colors">
+          Jetzt Tour anfragen
+        </a>
+      </div>
     </div>
   </header>
 
@@ -237,13 +265,13 @@
               </picture>
               
               <!-- Floating Overlay Badge -->
-              <div class="absolute -bottom-4 -left-4 bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-800 max-w-[240px]">
+              <div class="absolute -bottom-4 left-4 sm:left-auto sm:-left-4 bg-slate-900 text-white p-4 rounded-xl shadow-lg border border-slate-800 max-w-[240px] z-10">
                 <div class="flex items-center gap-2 mb-1">
                   <span class="text-amber-400 font-bold text-sm">Festpreis</span>
                   <span class="text-xs bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-semibold">Fair & transparent</span>
                 </div>
-                <div class="text-2xl font-extrabold text-white">60 € <span class="text-xs font-normal text-slate-400">pro Gruppe</span></div>
-                <p class="text-[11px] text-slate-400 mt-1">Umgerechnet nur 12 bis 15 € pro Person bei vier bis fünf Spielern!</p>
+                <div class="text-2xl font-extrabold text-white">60 € <span class="text-xs font-normal text-slate-300">pro Gruppe</span></div>
+                <p class="text-[11px] text-slate-300 mt-1">Umgerechnet nur 12 bis 15 € pro Person bei vier bis fünf Spielern!</p>
               </div>
 
               <div class="absolute -top-3 -right-3 bg-white p-2 rounded-xl shadow-md border border-slate-200 text-center">
@@ -262,7 +290,7 @@
 
 
   <!-- DAS ERLEBNIS / ÜBER DIE TOUR -->
-  <section id="tour" class="py-20 bg-slate-50">
+  <section id="tour" class="py-20 bg-slate-50 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -490,7 +518,7 @@
   </section>
 
   <!-- GOOGLE BEWERTUNGEN / VERTRAUEN -->
-  <section id="bewertungen" class="py-20 bg-slate-50 border-b border-slate-200">
+  <section id="bewertungen" class="py-20 bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
@@ -508,7 +536,7 @@
         </div>
         <div>
           <a href="https://maps.app.goo.gl/fkzytxtFseKyUopQ9" target="_blank" rel="noopener noreferrer" 
-             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 text-sm font-bold border border-slate-300 shadow-sm transition-colors">
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 text-sm font-bold border border-slate-300 shadow-sm transition-colors">
             <svg class="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             Alle Google Rezensionen ansehen
           </a>
@@ -519,86 +547,86 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         <!-- Review 1: Mira Knörzer -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
             <p class="text-sm text-slate-700 leading-relaxed mb-3">
               „Wir haben schon häufiger Exit Games bzw. auch Escape Rooms gespielt. Beim Hall Escape kam als Besonderheit hinzu, dass wir nebenbei unsere Geburtsstadt zu Fuß erkundet haben und so die eine oder andere neue Ecke entdecken konnten.“
             </p>
             <p class="text-sm text-slate-700 leading-relaxed mb-3">
-              „Die liebevoll gepackte Tasche mit kleiner Belohnung am Ende hat uns super durch die Stationen geleitet. Das war überhaupt ein großer Pluspunkt, dass das Spiel ohne Zeitdruck gespielt wird und somit gleichzeitig ein Bummeln durch Schwäbisch Hall möglich ist.“
+              „Die liebevoll gepackte Tasche mit kleiner Belohnung am Ende hat uns super durch die Stationen geleitet – ohne Zeitdruck, sodass gleichzeitig ein gemütliches Bummeln durch Hall möglich war.“
             </p>
             <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
-              „Die Rätsel selbst sind sehr abwechslungsreich und auf einem angenehmen Schwierigkeitslevel. Wir hatten viel Spaß und können die kurzweilige Tour sehr empfehlen!“
+              „Die Rätsel sind sehr abwechslungsreich und auf angenehmem Niveau. Wir hatten viel Spaß und können die Tour sehr empfehlen!“
             </p>
           </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-sm">
               M
             </div>
             <div>
               <span class="block font-bold text-sm text-slate-900">Mira Knörzer</span>
-              <span class="block text-xs text-slate-500">Google Rezension • 5 Sterne</span>
+              <span class="block text-xs text-slate-600">Google Rezension • 5 Sterne</span>
             </div>
           </div>
         </div>
 
         <!-- Review 2: Marco L -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
             <p class="text-sm text-slate-700 leading-relaxed mb-3">
               „Absolut empfehlenswert! Spannende und abwechslungsreiche Rätsel, bei denen man nicht nur Freude beim Lösen hat, sondern auch das wunderschöne Schwäbisch Hall noch einmal ganz anders wahrnehmen kann.“
             </p>
             <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
-              „Besonders gefallen hat uns, wie gut die Rätsel aus der Umgebung entstanden sind und dadurch nicht erzwungen wirken. Die Rätseltasche rundet die Escape Tour super ab. Wir hoffen auf jeden Fall auf ein weiteres Escape Game 🙂“
+              „Besonders gefallen hat uns, wie gut die Rätsel aus der Umgebung entstanden sind und dadurch nie erzwungen wirken. Die Rätseltasche rundet die Escape Tour super ab. Wir hoffen auf jeden Fall auf ein weiteres Escape Game 🙂“
             </p>
           </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-sm">
               M
             </div>
             <div>
               <span class="block font-bold text-sm text-slate-900">Marco L.</span>
-              <span class="block text-xs text-slate-500">Google Rezension • 5 Sterne</span>
+              <span class="block text-xs text-slate-600">Google Rezension • 5 Sterne</span>
             </div>
           </div>
         </div>
 
         <!-- Review 3: Fabio 7777 -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
             <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
               „Richtig coole Tour und super Rätsel! Jeder Schwierigkeitsgrad ist dabei und man entdeckt Ecken in Schwäbisch Hall, die man noch gar nicht kennt!“
             </p>
           </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
               F
             </div>
             <div>
               <span class="block font-bold text-sm text-slate-900">Fabio 7777</span>
-              <span class="block text-xs text-slate-500">Google Rezension • 5 Sterne</span>
+              <span class="block text-xs text-slate-600">Google Rezension • 5 Sterne</span>
             </div>
           </div>
         </div>
 
         <!-- Review 4: Ed Die -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
             <p class="text-sm text-slate-700 leading-relaxed italic mb-4">
               „Es hat eine Menge Spaß gemacht. Durch die Tour habe ich Ecken und Orte in Hall festgestellt, die ich sonst noch nicht so gesehen habe. GG WP“
             </p>
           </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm">
               E
             </div>
             <div>
               <span class="block font-bold text-sm text-slate-900">Ed Die</span>
-              <span class="block text-xs text-slate-500">Google Rezension • 5 Sterne</span>
+              <span class="block text-xs text-slate-600">Google Rezension • 5 Sterne</span>
             </div>
           </div>
         </div>
@@ -820,8 +848,8 @@
             <form name="buchungsanfrage" method="POST" action="/danke.html" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5">
               
               <!-- Anti-Bot Honeypot -->
-              <p class="hidden">
-                <label>Bitte dieses Feld leer lassen: <input name="bot-field"></label>
+              <p class="hidden" aria-hidden="true">
+                <label>Bitte dieses Feld leer lassen: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
               </p>
               <input type="hidden" name="form-name" value="buchungsanfrage">
 
@@ -859,10 +887,10 @@
                   <div class="flex items-center gap-1.5 mb-2">
                     <label for="participants" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Teilnehmer *</label>
                     <div class="relative group flex items-center cursor-help">
-                      <span class="w-4 h-4 rounded-full bg-slate-200 text-slate-600 hover:bg-amber-100 hover:text-amber-800 text-[10px] font-bold flex items-center justify-center transition-colors">i</span>
-                      <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:flex flex-col items-center z-20 w-48 pointer-events-none">
-                        <div class="bg-slate-900 text-white text-[11px] rounded-lg px-2.5 py-1.5 text-center shadow-lg leading-tight font-normal">
-                          Empfohlen für 2 bis 5 Personen
+                      <span class="w-4 h-4 rounded-full bg-slate-200 text-slate-700 hover:bg-amber-100 hover:text-amber-800 text-[10px] font-bold flex items-center justify-center transition-colors" aria-label="Hinweis zur Gruppengröße">i</span>
+                      <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:flex flex-col items-center z-20 w-72 max-w-[85vw] pointer-events-none">
+                        <div class="bg-slate-900 text-white text-[11px] rounded-lg px-3 py-2 text-center shadow-lg leading-relaxed font-normal w-full">
+                          Optimal für 2 bis 5 Personen. Auch 1 oder bis zu 7 Personen möglich!
                         </div>
                         <div class="w-2 h-2 bg-slate-900 rotate-45 -mt-1"></div>
                       </div>
@@ -877,46 +905,41 @@
                     <option value="5 Personen">5 Personen</option>
                     <option value="6 Personen">6 Personen</option>
                     <option value="7 Personen">7 Personen</option>
-                    <option value="8 Personen">8 Personen</option>
-                    <option value="9 Personen">9 Personen</option>
                   </select>
                 </div>
               </div>
 
-              <!-- Wunschdatum & Wunschzeit (Getrennte Stunde und Minute im 15-Minuten-Takt) -->
+              <!-- Wunschdatum & Wunschzeit -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="date" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Wunschdatum *</label>
                   <input type="date" id="date" name="date" required 
-                         class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
+                         class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
                 </div>
                 <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Wunsch Startzeit *</label>
-                  <div class="grid grid-cols-2 gap-2">
-                    <div>
-                      <select id="time_hour" name="time_hour" required 
-                              class="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
-                        <option value="10">10 Uhr</option>
-                        <option value="11">11 Uhr</option>
-                        <option value="12">12 Uhr</option>
-                        <option value="13">13 Uhr</option>
-                        <option value="14" selected>14 Uhr</option>
-                        <option value="15">15 Uhr</option>
-                        <option value="16">16 Uhr</option>
-                        <option value="17">17 Uhr</option>
-                        <option value="18">18 Uhr</option>
-                      </select>
-                    </div>
-                    <div>
-                      <select id="time_minute" name="time_minute" required 
-                              class="w-full px-3 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
-                        <option value="00" selected>:00 Min</option>
-                        <option value="15">:15 Min</option>
-                        <option value="30">:30 Min</option>
-                        <option value="45">:45 Min</option>
-                      </select>
-                    </div>
-                  </div>
+                  <label for="time" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Wunsch Startzeit *</label>
+                  <select id="time" name="time" required 
+                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
+                    <option value="10:00">10:00 Uhr</option>
+                    <option value="10:30">10:30 Uhr</option>
+                    <option value="11:00">11:00 Uhr</option>
+                    <option value="11:30">11:30 Uhr</option>
+                    <option value="12:00">12:00 Uhr</option>
+                    <option value="12:30">12:30 Uhr</option>
+                    <option value="13:00">13:00 Uhr</option>
+                    <option value="13:30">13:30 Uhr</option>
+                    <option value="14:00" selected>14:00 Uhr</option>
+                    <option value="14:30">14:30 Uhr</option>
+                    <option value="15:00">15:00 Uhr</option>
+                    <option value="15:30">15:30 Uhr</option>
+                    <option value="16:00">16:00 Uhr</option>
+                    <option value="16:30">16:30 Uhr</option>
+                    <option value="17:00">17:00 Uhr</option>
+                    <option value="17:30">17:30 Uhr</option>
+                    <option value="18:00">18:00 Uhr</option>
+                    <option value="18:30">18:30 Uhr</option>
+                    <option value="19:00">19:00 Uhr</option>
+                  </select>
                 </div>
               </div>
 
@@ -986,7 +1009,54 @@
   </footer>
 
   <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // Automatisches Copyright-Jahr
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // Datums-Validierung: Kein vergangenes Datum buchbar
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
+    }
+
+    // Mobiles Menü (Öffnen, Schließen & Schließen bei Link-Klick)
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const menuIconClosed = document.getElementById('menuIconClosed');
+    const menuIconOpen = document.getElementById('menuIconOpen');
+
+    if (mobileMenuBtn && mobileNav) {
+      const toggleMenu = () => {
+        const isHidden = mobileNav.classList.contains('hidden');
+        if (isHidden) {
+          mobileNav.classList.remove('hidden');
+          menuIconClosed?.classList.add('hidden');
+          menuIconOpen?.classList.remove('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+          mobileMenuBtn.setAttribute('aria-label', 'Menü schließen');
+        } else {
+          mobileNav.classList.add('hidden');
+          menuIconClosed?.classList.remove('hidden');
+          menuIconOpen?.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          mobileMenuBtn.setAttribute('aria-label', 'Menü öffnen');
+        }
+      };
+
+      mobileMenuBtn.addEventListener('click', toggleMenu);
+
+      // Bei Klick auf einen Anker-Link das mobile Menü automatisch einklappen
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (!mobileNav.classList.contains('hidden')) {
+            toggleMenu();
+          }
+        });
+      });
+    }
   </script>
 
 </body>
