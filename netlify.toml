@@ -1,6 +1,7 @@
 # Netlify Konfigurationsdatei für Hall Escape
 
 [build]
+  command = "npm run build"
   publish = "."
 
 # Erweiterte Security-Header gegen Angriffsversuche
@@ -17,8 +18,10 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     # Zugriff auf Browser-Hardware einschränken
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-    # Robuste Content Security Policy (erlaubt Tailwind CDN und Font/Image Quellen)
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+    # HTTPS Erzwingung (HSTS)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Robuste Content Security Policy
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
 
 [[headers]]
   for = "/assets/*"

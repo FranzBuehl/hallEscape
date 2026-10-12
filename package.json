@@ -1,0 +1,26 @@
+{
+  "name": "hallescape",
+  "version": "1.0.0",
+  "description": "Offizielle Website für **Hall Escape** in Schwäbisch Hall.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranzBuehl/hallEscape.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FranzBuehl/hallEscape/issues"
+  },
+  "homepage": "https://github.com/FranzBuehl/hallEscape#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
